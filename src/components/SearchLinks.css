@@ -1,0 +1,113 @@
+/* Search Links Section */
+#search-box {
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+    /* background-color: red; */
+
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: #bb86fc; /* Light purple header */
+    margin-bottom: 20px;
+  }
+  
+  #search-field {
+    padding: 10px;
+    font-size: 1rem;
+    width: 80%;
+    /* background-color: red;?? */
+    max-width: 400px;
+    background-color: #444;
+    color: #fff;
+    border: 2px solid #bb86fc;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  #search-field::placeholder {
+    color: #888;
+  }
+  
+  #search-field:focus {
+    border-color: #636061; /* Red border on focus */
+  }
+  
+  #links-list {
+    list-style: none;
+    padding: 0;
+    width: 80%;
+  }
+  
+  #links-list li {
+    background-color: #333; /* Dark background for each link */
+    margin: 10px 0;
+    padding: 10px 40px;
+    border-radius: 8px;
+    display: flex;
+    width: 100%;
+    
+    /* background-color: yellow; */
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  #links-list li span {
+    color: #bb86fc; /* Purple color for the link key */
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .copybtn {
+    background-color: transparent;
+    color: white; /* Red color for the button */
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+    background-color: rgb(134, 4, 209);
+  }
+  
+  .copybtn:hover {
+    background-color: #8367eb;
+    color: #fff; /* Change color on hover */
+  }
+  
+  .copybtn:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 23, 68, 0.5); /* Add glow effect on focus */
+  }
+  
+  /* Empty State Message */
+  #links-list li {
+    /* font-style: italic; */
+    font-size: 20px;
+    font-weight: 700;
+    color: #e0e0e0;
+  }
+  
+  @media (max-width: 768px) {
+    #search-box {
+      padding: 10px;
+    }
+  
+    h2 {
+      font-size: 1.8rem;
+    }
+  
+    #search-field {
+      font-size: 0.9rem;
+      width: 90%;
+    }
+  
+    .copybtn {
+      font-size: 0.9rem;
+      padding: 5px 8px;
+    }
+  }
+  

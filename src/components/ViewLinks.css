@@ -1,0 +1,90 @@
+/* ViewLinks Section */
+#all-links {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center;
+    /* background-color: pink; */
+  }
+  
+  h2 {
+    font-size: 2rem;
+    color: #bb86fc; /* Light purple header */
+    margin-bottom: 20px;
+  }
+  
+  #saved-links-list {
+    list-style: none;
+    padding: 0;
+    width: 80%;
+    /* background-color: red; */
+  }
+  
+  #saved-links-list li {
+    background-color: #333; /* Dark background for each link */
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  }
+  
+  a {
+    color: #bb86fc; /* Purple color for links */
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Delete Button */
+  .delete-btn {
+    background-color: transparent;
+    /* color: #ff1744; Red color for the delete button */
+    font-size: 18px; /* Large size for the emoji */
+    border: 5px;
+    background-color: red;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .delete-btn:hover {
+    background-color: #ca5656 !important; /* Darker red when hovered */
+  }
+  
+  .delete-btn:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 23, 68, 0.5); /* Add glow effect on focus */
+  }
+  
+  /* Empty State Message */
+  #saved-links-list li {
+    /* font-style: italic; */
+    font-weight: 800;
+    font-size: 18px;
+    color: #e0e0e0;
+    padding: 5px 40px ;
+  }
+  
+  @media (max-width: 768px) {
+    #all-links {
+      padding: 10px;
+    }
+  
+    h2 {
+      font-size: 1.8rem;
+    }
+  
+    a {
+      font-size: 1rem;
+    }
+  
+    .delete-btn {
+      font-size: 1.2rem; /* Slightly smaller button on smaller screens */
+    }
+  }
+  

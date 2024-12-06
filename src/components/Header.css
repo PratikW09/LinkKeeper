@@ -1,0 +1,33 @@
+/* Header Styles */
+header {
+    background-color: #121212; /* Dark background for header */
+    color: #e0e0e0;  /* Light text */
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 2px solid #333333; /* A subtle border to separate the header */
+  }
+  
+  h1 {
+    font-size: 3rem;
+    color: #bb86fc; /* Light purple for the title */
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    color: #e0e0e0;
+    margin-top: 0;
+    font-weight: 400;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 2.5rem;  /* Smaller font size for mobile */
+    }
+  
+    p {
+      font-size: 1rem; /* Adjust paragraph text for mobile */
+    }
+  }
+  
